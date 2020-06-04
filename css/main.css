@@ -29,6 +29,7 @@ img { vertical-align: middle; }
     left: 50%;
     margin-left: -800px;
 }
+
 .no-js .slideshow img:first-child {
     display: inline;
 }
@@ -109,6 +110,7 @@ img { vertical-align: middle; }
     margin-left: 24px;
     width: 304px;
 }
+
 .topics-list li:first-child {
     margin-left: 0;
 }
@@ -119,15 +121,29 @@ img { vertical-align: middle; }
     display: inline-block;
     margin-bottom: 1.5em;
     position:relative;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    /* -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); */
 }
-.no-boxshadow .topics-list .image-wrapper {
-    border: 1px solid rgb(204, 204, 204);
+
+.fadein {
+    overflow: hidden;
+}
+
+.fadein img {
+    display: block;
+    transition: 0.7s;
+}
+.fadein img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+    
+    .no-boxshadow .topics-list .image-wrapper {
+    /* border: 1px solid rgb(204, 204, 204); */
     margin-left: -1px;
     margin-right: -1px;
 }
-.topics-list .image-wrapper:before {
+/* .topics-list .image-wrapper:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -138,13 +154,13 @@ img { vertical-align: middle; }
     border-radius: 50%;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+} */
 .topics-list .title {
     display: block;
     font-size: 18px;
     line-height: 1.34;
     letter-spacing: 1px;
-    font-weight: normal;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .topics-list .date {
@@ -213,6 +229,7 @@ img { vertical-align: middle; }
     display: block;
     padding: 0 1.36em;
     position: relative;
+    font-size: 0.8rem;
 }
 .work-section .tabs-nav a:hover,
 .work-section .tabs-nav a.active {
@@ -267,7 +284,8 @@ img { vertical-align: middle; }
 }
 .work-section .section-body .content > .inner {
     position: absolute;
-    width: 250px;
+    width: 380px;
+    margin-top: 30px;
 }
 .work-section .section-body #work01 .content > .inner {
     top: 20px;
@@ -290,7 +308,7 @@ img { vertical-align: middle; }
     left: 680px;
 }
 .work-section .section-body .title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
